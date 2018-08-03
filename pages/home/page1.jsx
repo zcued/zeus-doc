@@ -7,7 +7,7 @@ class Page1 extends Component {
             <div id="page-1" className="page">
                 <div className="page-section-content">
                     <Link href="/docs/articles/get-started">
-                        <a className="btn-large btn-left">Start</a>
+                        <a className="btn-large btn-left">Start test</a>
                     </Link>
 
                     <div className="zeus-potrait">
