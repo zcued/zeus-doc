@@ -6,7 +6,7 @@
 #### 删格布局
 删格会把一行分为24格  
 通过设置 `Col` 的 `span` 属性来改变每个块所占的比例  
-通过设置 Row 的 gutter属性来改变内容块直接的间距
+通过设置 `Row` 的 `gutter` 属性来改变内容块直接的间距
 
 ``` jsx
 import { Row, Col } from 'zeus'
