@@ -1,0 +1,90 @@
+.doc {
+    box-sizing: border-box;
+    padding: 0px 32px;
+    padding-bottom: 48px;
+    .doc-markdown {
+        h1 {
+            margin-top: 36px;
+        }
+        h2 {
+            margin-top: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            th {
+                text-align: left;
+                background: #aaa;
+                color: #fff;
+            }
+            th,
+            td {
+                padding: 12px 8px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+    .demo-code {
+        margin-top: 16px;
+    }
+    .icon-demo {
+        border-radius: 0;
+    }
+}
+
+.doc-main {
+    overflow-x: hidden;
+    .main-footer {
+        .footer-container {
+            max-width: 100%;
+            padding-top: 8px;
+        }
+    }
+}
+
+.btn {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    &:focus {
+        outline: none
+    }
+}
+
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.ripple {
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all ease-out .4s;
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    .abs-center;
+}
+
+.do-tabs {
+    box-shadow: 0 0 5px #666;
+    position: relative;
+    overflow: hidden;
+    .tab {
+        padding: 12px 18px;
+        box-sizing: border-box;
+    }
+    .active-bar {
+        position: absolute;
+        bottom: 0;
+        background: #000;
+        display: block;
+        height: 2px;
+        transition: all ease 0.3s;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "doc-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server/dev",
+    "build": "next build",
+    "start": "node server/prod"
+  },
+  "dependencies": {
+    "@zeit/next-less": "^0.3.0",
+    "@zeit/next-typescript": "^1.1.0",
+    "chalk": "^2.4.1",
+    "less": "^3.5.3",
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "zeus-md-loader": "^1.0.1",
+    "zeus-md-next-loader": "^1.0.0"
+  }
+}
