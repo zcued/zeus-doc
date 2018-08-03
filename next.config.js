@@ -1,7 +1,6 @@
 const withLess = require('@zeit/next-less'),
-  widthTs = require('@zeit/next-typescript'),
   path = require('path');
-module.exports = widthTs(withLess({
+module.exports = withLess({
   pageExtensions: ['jsx', 'js', 'mdsx'],
   webpack(config) {
     config.module.rules.push(
@@ -12,4 +11,4 @@ module.exports = widthTs(withLess({
     );
     return config;
   }
-}))
+})

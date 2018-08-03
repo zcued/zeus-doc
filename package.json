@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@zeit/next-less": "^0.3.0",
-    "@zeit/next-typescript": "^1.1.0",
     "chalk": "^2.4.1",
     "less": "^3.5.3",
     "next": "^6.1.1",

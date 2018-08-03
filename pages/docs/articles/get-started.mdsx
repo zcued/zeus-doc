@@ -4,17 +4,19 @@
 ![](https://img.shields.io/github/license/zcued/zeus.svg)
 ![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-## 快速上手
+## 介绍
 
 一个轻量并切美观的UI组件库
 
-### 安装
+## 快速上手
+
+#### 安装
 
 ```sh
 npm i zeus-ui
 ```
 
-### Usage
+#### Usage
 
 ```jsx
 import React from 'react'
@@ -33,16 +35,10 @@ const App = () => (
 ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
-#### [👉 点击这里 👈](https://zcued.github.io/zeus-doc/dist) for more information.
+## 反馈
 
-### 反馈
+如果有什么问题或者好的注意可以在我们的 [github](https://github.com/zcued/zeus/issues) 上进行反馈 
 
-如果有什么问题或者好的注意可以在我们的[github](https://github.com/zcued/zeus/issues)上进行反馈 
+## 浏览器支持
 
-### 浏览器支持
-
-支持所有 [browsers that React supports](https://reactjs.org/docs/react-dom.html#browser-support) are supported.
-
-### Contributing
-
-Before opening an issue or pull request, please read the [Contributing guide](https://github.com/zcued/zeus/blob/master/CONTRIBUTING.md).
+支持所有 [React 所支持的浏览器](https://reactjs.org/docs/react-dom.html#browser-support)
