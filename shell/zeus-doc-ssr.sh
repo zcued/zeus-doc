@@ -13,7 +13,7 @@ yarn install
 
 echo "---------- start build ! ----------"
 yarn build
-pm2 restart prod
+pm2 restart prod --fork
 
 if [ $? -ne 0 ]; then
   echo "---------- deploy falied ! -----------"
