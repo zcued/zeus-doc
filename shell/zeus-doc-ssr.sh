@@ -13,7 +13,7 @@ yarn install
 
 echo "---------- start build ! ----------"
 yarn build
-pm2 restart prod --fork
+pm2 restart zeus-doc
 
 if [ $? -ne 0 ]; then
   echo "---------- deploy falied ! -----------"
