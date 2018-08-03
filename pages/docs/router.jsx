@@ -1,6 +1,5 @@
 const Config = [
     { name: '开始使用', route: '/docs/articles/get-started' },
-    { name: '文档的使用', route: '/docs/articles/README' },
     {
         name: '组件',
         options: [
