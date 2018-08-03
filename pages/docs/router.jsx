@@ -7,13 +7,14 @@ const Config = [
             {
                 name: '基本',
                 options: [
+                    { name: 'Grid 布局', route: '/docs/components/grid' },
                     { name: 'Heading 标题', route: '/docs/components/heading' },
                     { name: 'Icon 图标', route: '/docs/components/icon' },
                     { name: 'Button 按钮', route: '/docs/components/button' }
                 ]
             },
             {
-                name: '表单',
+                name: '输入',
                 options: [
                     { name: 'Form 表单', route: '/docs/components/form' },
                     { name: 'Input 输入框', route: '/docs/components/input' },
@@ -35,9 +36,10 @@ const Config = [
             {
                 name: '导航',
                 options: [
-                    { name: 'Pagination 分页', route: '/docs/components/pagination' },
                     { name: 'Tabs 选项卡', route: '/docs/components/tabs' },
-                    { name: 'Menus 菜单栏', route: '/docs/components/menus' }
+                    { name: 'Menus 菜单栏', route: '/docs/components/menus' },
+                    { name: 'Collapse 下拉菜单', route: '/docs/components/dropdown' },
+                    { name: 'Pagination 分页', route: '/docs/components/pagination' }
                 ]
             },
             {
