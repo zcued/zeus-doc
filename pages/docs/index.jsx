@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import { Provider } from 'zeus'
-import routeConfig from './router'
+import Router from 'next/router'
+import NProgress from 'nprogress'
 
+import routeConfig from './router'
 import Logo from '../../components/logo'
 import Footer from '../../components/footer'
 import '../../styles/index.less'
@@ -41,13 +43,25 @@ getRoutesFrom(routeConfig)
 
 function Layout(Doc) {
     return class Page extends React.Component {
+
         static getInitialProps(cxt) {
             const route = cxt.req ? cxt.req.url : ''
             return { route }
         }
+
+        componentDidMount() {
+            Router.onRouteChangeStart = () => {
+                NProgress.start()
+            }
+            Router.onRouteChangeComplete = () => {
+                NProgress.done()
+            }
+            Router.onRouteChangeError = () => NProgress.done()
+        }
+
         render() {
             let { route } = this.props
-            if(!route){
+            if (!route) {
                 route = location.pathname
             }
             return (
