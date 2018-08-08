@@ -17,7 +17,7 @@ class MainFooter extends Component {
                         </ul>
                     </div> */}
                 </div>
-                <div className="copyright">&copy; Made with Zcool front end</div>
+                <div className="copyright">&copy; Made With Zcool Front End</div>
             </footer>
         );
     }
