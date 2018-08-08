@@ -21,23 +21,27 @@ function getRoutesFrom(configs) {
 }
 
 function mapRoutes(configs, route) {
-    return configs.map((config, index) => {
-        if (config.options) {
-            return <li key={index} className="nav-menu">
-                <div className="option-tag">{config.name}</div>
-                <ul>
-                    {mapRoutes(config.options, route)}
-                </ul>
-            </li>
+    return <ul className="nav">
+        {
+            configs.map((config, index) => {
+                if (config.options) {
+                    return <li key={index} className="nav-menu">
+                        <div className="option-tag">{config.name}</div>
+                        <ul>
+                            {mapRoutes(config.options, route)}
+                        </ul>
+                    </li>
+                }
+                else {
+                    return <li key={index} className="nav-menu">
+                        <Link href={config.route}>
+                            <a className={route === config.route ? 'active' : ''}>{config.name}</a>
+                        </Link>
+                    </li>
+                }
+            })
         }
-        else {
-            return <li key={index} className="nav-menu">
-                <Link href={config.route}>
-                    <a className={route === config.route ? 'active' : ''}>{config.name}</a>
-                </Link>
-            </li>
-        }
-    })
+    </ul>
 }
 getRoutesFrom(routeConfig)
 
@@ -69,9 +73,7 @@ function Layout(Doc) {
                     <div className="main doc-main">
                         <div className="main-sidebar">
                             <Logo />
-                            <ul className="nav">
-                                {mapRoutes(routeConfig, route)}
-                            </ul>
+                            {mapRoutes(routeConfig, route)}
                         </div>
                         <div className="main-content">
                             <div className="doc-container">

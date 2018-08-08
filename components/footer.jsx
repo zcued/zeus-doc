@@ -5,7 +5,7 @@ class MainFooter extends Component {
         return (
             <footer className="main-footer">
                 <div className="footer-container">
-                    <div className="footer-links">
+                    {/* <div className="footer-links">
                         <div className="logo">
                             <img src={'/static/logo.svg'} alt="" />
                         </div>
@@ -15,7 +15,7 @@ class MainFooter extends Component {
                             <li className="footer-links-item">Training</li>
                             <li className="footer-links-item">Podcast</li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="copyright">&copy; Made with Zcool front end group</div>
             </footer>
